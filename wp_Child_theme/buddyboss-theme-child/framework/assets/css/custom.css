@@ -1,0 +1,532 @@
+/* Cart Table */
+.student-name {
+    width: 32%;
+    padding-left: inherit !important;
+}
+
+
+
+
+
+/*::-webkit-scrollbar {
+  width: 20px;
+}
+*/
+
+
+
+table.moodle-course-section-list ul.enrol-btn{
+    height: auto;
+    margin: 0;
+}
+
+ul.enrol-btn li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.woocommerce-cart table.cart img {
+    width: 55px !important;
+}
+.product-remove {
+    padding-right: inherit !important;
+}
+.product-student {
+    text-align: center;
+    text-transform: capitalize;
+}
+button.student-btn:focus {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+/* Update Cart Button */
+button[name="update_cart"] {
+    display: none !important;
+}
+
+/* Sudent List Table */
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+tr.student-detail:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    color: #212529;
+}
+td.product-moodlegroup > input {
+    width: 100%;
+}
+/* form input color */
+span.required {
+    color: red;
+    padding-left: 0.2em;
+}
+.student_form input, .student_edit input {
+    color: black;
+}
+span.student-loader {
+    display: none;
+}
+button.student-btn, .submit-button, .student-close, .cancel-button {
+    letter-spacing: normal !important;
+}
+button.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+button.close:focus,
+button.close:hover {
+    background-color: transparent;
+}
+.required:not(:last-child):after {
+    content:" *";
+    color: red;
+}
+label.required{
+    color: unset;
+}
+.form-submitting {
+    opacity: 0.5;
+}
+/* datepicker css */
+input#date-of-birth {
+    background-color: #f2f2f2;
+}
+/* section class gray */
+.gray{
+    color: unset !important;
+}
+
+/* Form Validation */
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: unset !important;
+}
+
+.form-control.error {
+    border-color: #dc3545 !important;
+    padding-right: calc(1.5em + 0.75rem) !important;
+    background-image: url("../images/error.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center right calc(0.375em + 0.1875rem) !important;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) !important;
+}
+#content {
+    z-index: unset !important;
+}
+.ui-datepicker-title{
+    display: flex;
+    justify-content: space-between;
+}
+input#student_dob {
+    background-color: white;
+}
+table.ui-datepicker-calendar {
+    margin-block: 5px !important;
+}
+.timeout{
+    margin-top: 5px;
+}
+
+/* Woocommerce Account Page */
+.woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--my-courses a:before {
+    content: '\ee54';
+}
+
+/* Moodle course section */
+.modal-open button.close {
+    display: inline-block;
+}
+button.close {
+    display: none;
+}
+.moodle-course-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.moodle-section{
+    margin: 0 55px 20px !important;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #0a0a0a;
+    font-size: 14px;
+    padding: 0 0 1.25rem;
+    padding-bottom: 0;
+    /*width: 265px !important;*/
+    /*width: calc(25% - 20px);*/
+    /*max-width: calc(25% - 20px);*/
+}
+.section-title {
+    background-color: #4caf50;
+    border-bottom: 1px solid #0a0a0a;
+    border-radius: 10px;
+    border-bottom-right-radius: initial;
+    border-bottom-left-radius: initial;
+}
+.moodle-section .course{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 1px;
+}
+.moodle-section .course-length.course{
+    padding-right: 10px;
+}
+.course > span {
+    font-size: 16px;
+    margin-left: 3.25rem;
+    /*margin-top: -20px;*/
+}
+.course-img {
+    max-width: 33px !important;
+    margin-right: 1.25rem;
+    vertical-align: text-top;
+    margin-bottom: -11px;
+    display: inline-block !important;
+}
+.timezone-img {
+    margin-right: 6px !important;
+}
+span.moodle-course-enroll-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    /*margin-left: 0;*/
+}
+.course-enroll-btn{
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #0a0a0a;
+    margin-left: -25px;
+}
+.moodle-section {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.enrol-btn{
+    align-self: end;
+    height: 95px;
+}
+.moodle-section-content-div{
+    align-self: start;
+    width: 100%;
+}
+@media (max-width: 1326px) {
+    .moodle-section{
+        width: 100%;
+        max-width: 100%;
+        justify-content: stretch;
+        /*margin: 0 55px 20px;*/
+    }
+    button.slick-prev.slick-arrow {
+        margin-left: 25px !important;
+    }
+    button.slick-next.slick-arrow {
+        /*left: 85% !important;*/
+        margin-left: -1.75rem !important;
+    }
+    /*.slick-arrow{
+        left: 55px !important;
+        top: auto !important;
+        bottom: -30px;
+    }*/
+    section.moodle-course-product {
+        margin-bottom: 25px;
+        /*max-width: 100%;*/
+    }
+    .slick-initialized .slick-slide {
+        display: inline-grid !important;
+    }
+    .moodle-section {
+        padding-bottom: 0;
+    }
+    span.moodle-course-enroll-btn{
+        margin-top: 0;
+        padding-bottom: 25px;
+    }
+    ul.course-content {
+        margin-bottom: inherit;
+    }
+    ul.enrol-btn li.course {
+        margin-bottom: auto;
+    }
+}
+span.course-days {
+    font-size: 14px;
+}
+.details{
+    font-size: 14px;
+}
+/* Slick Slider */
+.slider {
+    display: none;
+}
+.slider.slick-initialized {
+    display: block;
+}
+.slider:before{
+    content: none !important;
+}
+.slick-arrow.slick-prev::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/8.png);
+    background-repeat: round;
+    background-position: center center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41px;
+    height: 38px;
+}
+
+.slick-arrow.slick-next::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/7.png);
+    background-repeat: round;
+    background-position: center center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41px;
+    height: 38px;
+}
+button.slick-next.slick-arrow {
+    left: 100%;
+    margin-left: 10px;
+}
+button.slick-prev.slick-arrow {
+    margin-left: -5px;
+}
+
+.slick-dots, .slick-next, .slick-prev {
+    position: absolute;
+    display: block;
+    padding: 0;
+}
+.slick-prev {
+    left: -25px !important;
+}
+.slick-next, .slick-prev {
+    font-size: 0;
+    line-height: 1;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px\9;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+
+.slick-arrow {
+    border: none;
+    color: transparent;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    outline-width: 0;
+    background: transparent none !important;
+
+    /*background: #4caf50 !important;
+    margin-top: auto !important;*/
+}
+.slick-arrow:hover {
+    background-color: transparent !important;
+}
+.slick-slider {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+button#course-enroll {
+    display: flex;
+    justify-content: center;
+    margin-left: -70px;
+    text-wrap: nowrap;
+    color: #fff;
+}
+.slick-track {
+    display: flex !important;
+}
+.slick-slide {
+    height: inherit !important;
+}
+/* product price color */
+.woocommerce #content div.product p.price{
+    color: #4caf50 !important;
+}
+.course-students {
+    text-align: center;
+    margin-right: 1.6875rem;
+}
+.timezone_display {
+    font-size: 18px;
+}
+
+/* product details product meta */
+span.posted_in.pr-atts-row > a,
+span.tagged_as.pr-atts-row > a {
+    display: contents;
+}
+span.tagged_as.pr-atts-row > a {
+    color: #77a464 !important;
+}
+
+/* Select student select field */
+.select2-container.select2-container--default .select2-results__option[aria-selected=true] {
+    color: unset !important;
+}
+.select2-container.select2-container--default .select2-results__option:hover {
+    background-color: #ddd !important;
+    color: #ccc;
+}
+.select2-container--default .select2-results__option[data-selected=true]{
+    background-color: #fff;
+}
+
+/*Account Page Add/Edit student icon */
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--add-edit-student a:before{
+    content: "\ef5a";
+}
+@media (min-width: 600px) {
+    .slick-initialized .slick-slide{
+        min-width: 265px
+    }
+}
+@media (max-width: 480px) {
+    iframe.giphy-embed {
+        max-width: 100%;
+    }
+}
+
+/* Variation-Vendor cart page */
+.cart_item td.student-name dd.variation-Vendor {
+    display: inline-block;
+}
+.cart_item td.student-name dd.variation-Startdate {
+    padding-left: 80px;
+}
+/*--------LDS Additional CSS 08112023------*/
+
+
+table.moodle-course-section-list thead {
+    border: 3px solid;
+}
+
+
+
+
+
+table.moodle-course-section-list thead th {
+    white-space: nowrap;
+}
+
+table.moodle-course-section-list thead {
+    background-color: #e3efe3;
+}
+
+
+table.moodle-course-section-list  th  img {
+    max-width: 80px !important;
+    vertical-align: middle;
+}
+
+table.moodle-course-section-list tbody tr {
+    border: 3px solid;
+}
+
+table.moodle-course-section-list  td {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+table.moodle-course-section-list  ul.enrol-btn {
+    height: auto;
+}
+
+table.moodle-course-section-list button#course-enroll {
+    border-radius: 20px;
+}
+
+table.moodle-course-section-list ul.enrol-btn li.course-enrolbtn.course {
+    list-style: none;
+}
+
+table.moodle-course-section-list tr:nth-child(even) {
+    background-color: #aaaaaa47;
+}
+
+
+
+
+/*START MEDIA*/
+
+
+
+@media(max-width:1601px){
+    div#meetingbyzone {
+    overflow-x: auto;
+}
+}
+
+
+
+@media (max-width:800px){
+   table.moodle-course-section-list thead th {
+    white-space: normal;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px ;
+}
+
+
+
+
+#content div.product {
+    flex-flow: column !important;
+}
+
+table.moodle-course-section-list  th  img {
+   max-width: 42px !important;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+#mcslist tbody tr td{
+ font-size: 10px;
+    width: 10.95%;
+    padding: 8px;
+}
+
+table.moodle-course-section-list ul.enrol-btn{
+    margin: 5px;
+}
+
+}
+
+
+/*END MEDIA*/
+
+
+
+
+
+/* table.moodle-course-section-list thead {
+    background-color: #b1d5b1;
+} */
