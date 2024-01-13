@@ -66,9 +66,10 @@ class PageTemplater {
             're-subscription-request.php' => 'Re-Subscription Request',
             'user-subscription-request.php' => 'User Subscription Request',
             'thankyou.php' => 'Thank You',
-            'add-children.php' => 'ADD Children',
             'home-page.php' => 'Landing Page',
             'moodle-loging.php' => 'Moodle login',
+            'schools_quote.php' => 'Schools Quote',
+
         );
     }
 
@@ -407,9 +408,7 @@ function adduser_by_admin(){
   echo "Done";
   }else{
     echo "something went wrong..!";
-  }
-  
-  
+  }  
   die();
 }
 
