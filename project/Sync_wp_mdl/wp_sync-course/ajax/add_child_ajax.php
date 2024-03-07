@@ -1,9 +1,13 @@
 <?php
 require_once('../../../../wp-config.php');
 global $wpdb; 
-// if($_POST['delid']){
-// 	$deluserid = $_POST['delid'];
-// }
+if($_POST['delid']){
+	$deluserid = $_POST['delid'];
+	echo 'aaaaaaaa';
+	echo $_POST['delid'];
+	die;
+
+}
 
 if($_POST['childid'] > 0){
 	$childid = $_POST['childid'];
@@ -60,52 +64,11 @@ if(sizeof($error_arr)){
 		$default_newuser = array(
 			'ID' => $childid,
 			'user_pass' =>  $password,
-			'display_name' => $fname.' '.$lname,
+			'user_login' => $username,
+			'user_email' => $email,
 			'first_name' => $fname,
 			'last_name' => $lname
 		);
-		$userdata = wp_update_user($default_newuser);
-		$edituser = $wpdb->get_row("SELECT * FROM " . $wpdb->prefix . "users WHERE `id` = ".$childid."");
-		// echo "<pre>";
-		// print_r($default_newuser);
-		// print_r($edituser);
-		// die;
-		if($userdata){
-			$user_password = update_user_meta($userdata, 'member_password', base64_encode($password));
-			$user_parent = update_user_meta($userdata, 'parent_id',$parentid);
-
-			$request_data=array('parentid'=>$parentid,'user_email'=>$edituser->user_email,'username'=>$edituser->user_login,'firstname'=>$fname,'lastname'=>$lname,'userpassword'=>md5(base64_decode($password)));
-			$setting_data=$wpdb->get_row("SELECT * FROM {$wpdb->prefix}moodle_settings");
-			$url=$setting_data->url;
-
-			$curl =curl_init();
-			curl_setopt_array($curl, array(
-				CURLOPT_URL => $url.'/local/coursesync/wp-childuser.php',
-				CURLOPT_RETURNTRANSFER => true,
-				CURLOPT_ENCODING => '',
-				CURLOPT_MAXREDIRS => 10,
-				CURLOPT_TIMEOUT => 0,
-				CURLOPT_FOLLOWLOCATION => true,
-				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-				CURLOPT_CUSTOMREQUEST => 'POST',
-				CURLOPT_POSTFIELDS =>json_encode((object)$request_data),
-				CURLOPT_HTTPHEADER => array(
-					'Content-Type: application/json'
-				),
-			));
-
-			$response = curl_exec($curl);
-			curl_close($curl);
-		
-			$obj = new stdClass();
-			$obj->username = $username;
-			$obj->fname = $fname;
-			$obj->lname = $lname;
-			$obj->email = $email;
-			$msg['status']='update';
-			// $msg['data']=$obj;
-			$msg['msg']='User has been updated';	
-		}
 	}else{
 		// Separate Data
 		$default_newuser = array(
@@ -115,24 +78,30 @@ if(sizeof($error_arr)){
 			'first_name' => $fname,
 			'last_name' => $lname
 		);
-		
+	}
+
 		$usr = $wpdb->get_row("SELECT * FROM " . $wpdb->prefix . "users WHERE user_login = '".$username."'");
 		if(empty($usr)){
 			$totalmem = $wpdb->get_row("SELECT * FROM " . $wpdb->prefix . "members_info WHERE `user_id` = ".$parentid."");
 			$childcount = $wpdb->get_results("SELECT * FROM " . $wpdb->prefix . "usermeta  WHERE `meta_key` LIKE '%parent_id%' AND `meta_value` = '".$parentid."'");
-	
+
 			if($totalmem->member_count > count($childcount)){
-				$userdata = wp_insert_user($default_newuser);
-				// printf($userdata);
-				// die;
+				if($childid > 0){
+					$userdata = wp_update_user($default_newuser);
+				}else{
+					$userdata = wp_insert_user($default_newuser);
+				}
 				if($userdata){
 					$user_password = update_user_meta($userdata, 'member_password', base64_encode($password));
 					$user_parent = update_user_meta($userdata, 'parent_id',$parentid);
-	
-					$request_data=array('parentid'=>$parentid,'user_email'=>$email,'username'=>$username,'firstname'=>$fname,'lastname'=>$lname,'userpassword'=>md5(base64_decode($password)));
+					// echo "<pre>";
+					// print_r($_POST);
+					// echo "</pre>";
+					// die;
+					$request_data=array('user_email'=>$email,'username'=>$username,'firstname'=>$fname,'lastname'=>$lname,'userpassword'=>md5(base64_decode($password)));
 					$setting_data=$wpdb->get_row("SELECT * FROM {$wpdb->prefix}moodle_settings");
 					$url=$setting_data->url;
-	
+
 					$curl =curl_init();
 					curl_setopt_array($curl, array(
 						CURLOPT_URL => $url.'/local/coursesync/wp-childuser.php',
@@ -148,12 +117,14 @@ if(sizeof($error_arr)){
 							'Content-Type: application/json'
 						),
 					));
+
 					$response = curl_exec($curl);
-					curl_close($curl);				
+					curl_close($curl);
+				
 				}
+
 	
 				$obj = new stdClass();
-				$obj->id = $userdata;
 				$obj->username = $username;
 				$obj->fname = $fname;
 				$obj->lname = $lname;
@@ -165,15 +136,13 @@ if(sizeof($error_arr)){
 				$msg['msg']='Your have reach limit to creation of child';	
 				$msg['limit'] = 2;	
 			}
-	
+
 		}else{
 			array_push($error_arr, $responsedata->data);
 			$msg['status']=false;
 			$msg['data']=$error_arr;
 			$msg['msg']='';
 		}
-	}
-
 	
 	echo json_encode($msg);
 	// echo json_encode($moodle_user);

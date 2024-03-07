@@ -2,6 +2,9 @@
 global $wpdb,$woocommerce; 
 get_header();
 $currentuserid = get_current_user_id();
+/*$user22 = wp_get_current_user();
+echo "<pre>";
+print_r($user22);*/
 $user_count =1;
 $mnthlyprice = $wpdb->get_row("SELECT * FROM ".$wpdb->prefix ."options  WHERE option_name='monthly_package'" );
 $monthly_package = $mnthlyprice->option_value; 
@@ -316,7 +319,6 @@ function trailfunction(){
 					jQuery('.error_message').text(annobj1.message.message); 
 				}else{
 					console.log(result);
-					//user-subscription-request.php
 					window.location.href="<?php echo get_site_url();?>/?page_id=6973/?&uid="+annobj1.uid+"&mid="+annobj1.mid;
 				}
 			}

@@ -15,11 +15,9 @@ add_action('admin_menu', 'wp_moodle_sync');
 function wp_moodle_sync(){
     add_menu_page('WP Moodle Sync', 'WP Moodle Sync', 'manage_options', 'wpmoodlesync', 'moodleSettings' );
     add_submenu_page('wpmoodlesync', 'Couse Mapping', 'Couse Mapping', 'manage_options', 'mapping','couse_mapping');
-    add_submenu_page('wpmoodlesync', 'Parent List', 'Parent List', 'manage_options', 'parent','parent_list');
 }
 require_once("functions.php");
-require_once("add-children.php");
-require_once("parent_list.php");
+require_once("wptest.php");
 
 function couse_mapping(){
   echo "Course mapping";
