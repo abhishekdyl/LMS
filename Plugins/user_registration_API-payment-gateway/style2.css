@@ -1,0 +1,98 @@
+.d-sm-flex {
+background-color: #4e9395; 
+padding: 20px; 
+}
+
+#course_location, #course_timing {
+    list-style-type: none !important;
+    padding: 0 !important;
+}
+
+input.form-control {
+    width: 100% !important;
+}
+
+div#fitem_validate_mobile .col-md-9.felement {
+    justify-content: flex-end !important;
+}
+
+/* div#fitem_validate_mobile input#id_validate_mobile {
+    max-width: 62% !important;
+} */
+
+div#fitem_validate_mobile .col-md-9.felement {
+    max-width: 47%;
+}
+
+
+label#id_work_phone_label {
+    text-wrap: nowrap !important;
+}
+
+div#fitem_id_work_phone,
+div#fitem_id_po_box {
+    margin-left: 35px !important;
+}
+
+
+div#fitem_validate_email .col-md-9.felement {
+    justify-content: flex-end !important;
+    max-width: 47%;
+}
+
+/* div#fitem_validate_email .col-md-9.felement input#id_validate_email {
+    max-width: 62% !important;
+} */
+
+select.custom-select {
+    width: 100% !important;
+}
+
+.form-group.row.fitem.pec {
+    margin-left: 11px;
+}
+
+
+/* Start MEDIA */
+
+
+@media (max-width:1033px) {
+
+    div#fitem_id_work_phone,
+    div#fitem_id_po_box {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width:853px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .list-column {
+        flex-direction: column;
+    }
+
+    div#fitem_validate_mobile .col-md-9.felement,
+    div#fitem_validate_email .col-md-9.felement {
+        justify-content: flex-start !important;
+    }
+
+    .form-group {
+        flex-direction: column;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .form-group.row.fitem.pec {
+        margin-left: 0px;
+    }
+
+    .form-group.row.fitem.pec .col-md-9.checkbox {
+        padding: 0;
+    }
+
+}
+
+
+/* End MEDIA */

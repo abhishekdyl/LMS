@@ -1,0 +1,162 @@
+/*--------------------------------------------------------------
+This is your custom stylesheet.
+
+Add your own styles here to make theme updates easier.
+To override any styles from other stylesheets, simply copy them into here and edit away.
+
+Make sure to respect the media queries! Otherwise you may
+accidentally add desktop styles to the mobile layout.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+--------------------------------------------------------------*/
+
+.buddypanel .side-panel-menu a {
+    background-color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+}
+.login-split {
+	min-height: 300px;
+}
+.mpca-fat-bottom {
+	letter-spacing: 0;
+	font-weight: bold;
+}
+ul.buddypanel-menu li.bb-menu-section a span, ul.buddypanel-menu li.bb-menu-section a {
+	color: #fff;
+	opacity: 1;
+}
+.bb-mobile-panel-inner .buddypanel-menu li.bb-menu-section a span {
+    color: #242424;
+}
+.widget ul .wp-block-button a {
+	background: #4caf50;
+}
+#content {
+	z-index: 1;
+}
+.single .default-fi .entry-img {
+	min-height: 50vh !important;
+}
+.registration label[for="legal_agreement"] {
+    margin-top: 1rem!important;
+    border-top: 1px solid #ebebeb;
+    padding-top: 1rem;
+}
+p.submit input {
+    color: #fff !important;
+}
+.logged-in .show-logged-in {
+	display: block;
+}
+.logged-in .hide-logged-in {
+	display: none;
+}
+body:not(".logged-in") .show-logged-in {
+	display: hide;
+}
+body:not(".logged-in") .hide-logged-in {
+	display: show;
+}
+body.register span.mepr-checkboxes-field-row {
+    display: flex !important;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+body.register .mp_wrapper .mp-form-row label {
+    line-height: 1.2;
+    margin: 0 !important;
+}
+body.register span.mepr-checkboxes-field-row + span.mepr-checkboxes-field-row {
+	margin-top: 10px;
+}
+body.register .mp-form-label {
+	margin-bottom: 15px;
+}
+.mp-form-row span.mepr-checkboxes-field-row {
+    display: flex !important;
+    align-items: center;
+}
+.mp_wrapper .mp-form-row label {
+	margin-bottom: 0;
+}
+.extra-text {
+	display: none;
+}
+#menu-mobile-menu li.bb-menu-section a span {
+    color: #000;
+    opacity: 1 !important;
+}
+/* body.activation .elementor-location-footer, .bb-profile-grid.bb-grid #subnav {
+	display: none;
+} */
+.tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart.tinvwl-product-in-list:before {
+	color: red;
+	font-size: 1.5rem !important;
+}
+.tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart.tinvwl-product-in-list, .tinvwl_add_to_wishlist_button {
+	color: red;
+}
+.tinvwl_add_to_wishlist_button {
+    font-size: 16px;
+}
+.tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart:before {
+    font-size: 1.5rem !important;
+}
+.tinvwl_add_to_wishlist_button:hover {
+    color: red;
+}
+.woocommerce.tinv-wishlist button.button.alt {
+    padding: 10px;
+    letter-spacing: 0;
+}
+a#contact-me:before {
+    content: '\ee62';
+}
+#account-admin-visibility-mode:before {
+	content: '\ee69';
+}
+.woocommerce-MyAccount-navigation-link--giftcards a:before {
+        content: '\eea9';
+}
+.woocommerce-MyAccount-navigation-link--payment-methods a:before {
+	content: '\ee42';
+}
+#buddypress input[type=submit] {
+	letter-spacing: 0;
+}
+.side-panel-menu-container ul.buddypanel-menu li.bb-menu-section a span {
+	color: #d9d9d9 !important;
+}
+.e--ua-safari .side-panel-inner {
+	overflow-y: scroll;
+	position: relative;
+}
+.e--ua-safari .side-panel-inner .side-panel-menu-container {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.registration .entry-title {
+		font-family: "Libre Baskerville";
+		font-weight: 400;
+		font-style: normal;
+		font-size: 20px !important;
+	margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+	.blog .bb-elementor-content {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 20px;
+}
+.blog .bb-elementor-content #primary {
+	max-width: 70% !important;
+}
+.blog .bb-elementor-content #secondary {
+	max-width: 30%;
+}
+}
