@@ -1,0 +1,13 @@
+.course-days {
+    margin-top: 21px;
+    display: inline-block;
+}
+.course-time label {
+    margin-right: 5px;
+}
+.course-time {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,64 @@
+
+.loginform{
+    background: #ffff;
+    padding: 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+    margin-top: 25%;
+    max-width: 360px;
+
+}
+.img-log{
+    text-align: center;
+    width: 151px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+	    margin-left: 33px;
+}
+.img-logo{
+    width: 46px;
+    float: left;
+}
+.login-title{
+	padding-top: 27px;
+    display: inline-block;
+	font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+.loginform-img{
+	    padding: 28px;
+}
+.admlink{
+	    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #079bce;
+	    margin-top: 25px;
+}
+@media (max-width:480px ) {
+	body {
+    background-position-y: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+	
+	.loginform {
+		margin-top: 20% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+	
+}
+
+
+@media (min-width:481px ) and  (max-width:769px ){
+
+	.loginform { 
+		margin-top: 5% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+}

@@ -1,6 +1,6 @@
 Welcome,
 Abhishek sir In your git. 
-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
+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
 -------------------Git---------------------
 
 git reset --hard HEAD~  					// reset commit log 

@@ -61,8 +61,10 @@
                 $.ajax({
                     type: 'post',
                     url: '/learnoneplanet/wp-content/themes/zakra/ajax.php',
-                    data: formData, //sand data on url
+                    data: formData, //sand data on url OOOOOOOOOOORRRRRRRR
+                    // data: {id:qid,status:'ready'}, 
                     success: function (responseData) { //return responseData (anyname)
+                        // var data = JSON.parse(responseData);
                         console.log('formData',responseData);
                     }
                 });

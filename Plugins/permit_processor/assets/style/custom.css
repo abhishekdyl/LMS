@@ -1,0 +1,68 @@
+<style>
+        a.permit_delete {
+            cursor: pointer;
+            color: #ab0000;
+            font-weight: bold;
+        }
+        .btn-assign {
+            cursor: pointer;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .btn-unassign {
+            cursor: pointer;
+            color: #4e555b;
+            font-weight: bold;
+        }
+        #prod_cat_id {
+            /*  color: #eb1111; */
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #msg2{
+            color:#dc3545
+        }
+        #msg1{
+            color:#dc3545
+        }
+        .page_height{
+            margin-bottom: 10px;
+        }
+        .dbfield{
+            padding:6px 10px;
+            box-shadow: 0 0 5px 0 #ddd;
+            border: 1px solid #ddd;
+            color: #333;
+            font-size: 14px;
+        }
+        form#testimonal {
+            padding-top: 20px;
+        }
+        i.fa.fa-eye.btn-success {
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        i.fa.fa-eye-slash.btn-danger {
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a.btn-gray {
+            padding: 10px;
+            background-color: #f5902b;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a.btn-info {
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100px;
+            display: block;
+            text-align: center;
+        }
+        select.form_width {
+            max-width: 100%;
+        }
+    </style>	
