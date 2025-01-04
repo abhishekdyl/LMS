@@ -23,7 +23,6 @@ class customUploadFile
         //     // return redirect('/user');
         // }
 
-        dd(Auth::user());
 
         if (Auth::user()->roleid != 1) {
             return redirect('dashboard');

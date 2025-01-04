@@ -21,6 +21,9 @@
                         {{ __('Manage User') }}
                     </x-nav-link>
                     @endif
+                    <x-nav-link :href="url('dashboard/products')" :active="request()->routeIs('/dashboard/products')">
+                        {{ __('Products') }}
+                    </x-nav-link>
                 </div>
 
               </div>

@@ -5,7 +5,7 @@
         <div class="m-5">
             <h1>Create Users</h1>
             <form class="d-flex justify-content-between" action="createusercontroller" method="post" enctype="multipart/form-data">
-                <div clas="field">
+                <div clas="field" style="font-size: 14px;">
                     @csrf
                     <label for="name">Name : </label>
                     <input type="text" name="name" id="name" placeholder="enter your name">
@@ -34,7 +34,7 @@
                 </div>
             </form>
 
-
+ 
             <table class="table table-striped">
 
                 <thead>

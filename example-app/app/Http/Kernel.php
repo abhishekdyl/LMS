@@ -53,9 +53,9 @@ class Kernel extends HttpKernel
         //     \App\Http\Middleware\customUploadFile::class,
         // ],
 
-        'loggedin'=>[
-              \App\Http\Middleware\checkToken::class,
-        ],
+        // 'loggedin'=>[
+        //       \App\Http\Middleware\checkToken::class,
+        // ],
 
         'isadmin'=>[
             \App\Http\Middleware\customUploadFile::class, 

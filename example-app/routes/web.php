@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\fileupload;
 use App\Http\Controllers\createusercontroller;
 use App\Http\Controllers\modelbindingController;
+use App\Http\Controllers\productcontroller;
 use App\Http\Controllers\relationContoller;
 use Illuminate\Support\Str;
 
@@ -21,34 +22,35 @@ use Illuminate\Support\Str;
 
  
 
-Route::get('/', function () { 
-    return view('welcome');
-});
- 
+Route::view('/', 'welcome'); 
 Route::get('/user', function () {
     return view('user');
 });
 
-Route::get('test',[createusercontroller::class,'require_login']);
 
-//API upload file
+//----------API upload file-----------------
 Route::post('uploadfile',[fileupload::class,'uploadimg']);
-
 Route::get('img',[fileupload::class,'showPdf']);
 
- 
-// Route::view('createuser','createuser'); //--------CRUD------------
-Route::middleware(['loggedin'])->group(function(){
+ //---------------------CRUD--------------------
+// Route::view('createuser','createuser'); 
+// Route::middleware(['loggedin'])->group(function(){
     Route::middleware(['isadmin'])->group(function(){
         Route::get('/dashboard/createuser',[createusercontroller::class,'userlist']);
-        // Route::get('/dashboard/createuser',[createusercontroller::class,'require_login']);
         Route::post('/dashboard/createusercontroller',[createusercontroller::class,'createuser']);
         Route::get('/dashboard/delete/{id}',[createusercontroller::class,'delete']);
         Route::get('/dashboard/update/{id}',[createusercontroller::class,'update']);
         Route::post('edit',[createusercontroller::class,'edit']);
     });
-});
+// });
     
+//----------------products-----------------
+// Route::view('/dashboard/products', 'products');
+Route::get('/dashboard/products/{id?}',[productcontroller::class,'getproduct']);
+// Route::get('/dashboard/addproduct/{id}',[productcontroller::class,'addproduct']);
+
+
+//------------modelbinding-----------------
 Route::get('join',[modelbindingController::class,'tablejoin']);
 //------------modelbinding-----------------
 Route::get('device/{keyname:name}',[modelbindingController::class,'mbinding']);
@@ -67,9 +69,6 @@ $string = Str:: of($string)->ucfirst($string)
 echo $string;
 //------------------------------------------------------------------------
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
