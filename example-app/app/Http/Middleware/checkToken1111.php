@@ -22,10 +22,10 @@ class checkToken
         //     return redirect('login');
         // }
 
-        if(Auth::check() && Auth::user()->id){
-            // return redirect('/createuser');
-            return redirect('login');
-        }
+        // if(Auth::user()->id){
+        //     return redirect('login');
+        // }
+
         return $next($request);
     }
 }

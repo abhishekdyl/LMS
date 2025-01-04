@@ -15,16 +15,6 @@ class createusercontroller extends Controller
         $this->middleware('auth');
     }
 
-    // function require_login(){
-    //     //$userid = Auth::user()->id;
-    //     if(!empty(Auth::user()->id)){
-    //         $this->createuser();
-    //     }else{
-    //         // return view('login'); 
-    //         return redirect('/');
-    //     }
-    // }
-
     function createuser(Request $req){
 
         // When data flow break between the code Data will not we inserted by using transaction (TRANSACTION)
