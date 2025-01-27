@@ -1,0 +1,596 @@
+/*LDS*/
+
+.unamer li.tag {
+    margin-left: 30px;
+}
+
+.unamer li.tag.set {
+    list-style-type: circle;
+}
+
+.backfeed {
+    background-color: #ffecae;
+}
+
+.introfed2,
+.mainfed2,
+.finalfed2 {
+    cursor: pointer;
+}
+
+.ealert {
+    color: red;
+}
+
+.resourc {
+    color: #0778fd !important;
+}
+
+.prekey {
+    padding: 5px;
+    border: 2px solid #48b816;
+}
+
+#nametags:hover {
+    color: black;
+}
+
+#nametags {
+    background-color: #f55644;
+    margin-right: 8px;
+    color: #fff;
+}
+
+.saveresource {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+#resname,
+#reslink {
+    width: 90%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: large;
+    margin: 25px;
+}
+
+#fstsearch,
+#secsearch,
+#thrsearch {
+    width: 100%;
+}
+
+.semoji {
+    height: 30px;
+    width: 35px;
+}
+
+.fedlist .introfed2,
+.fedlist .mainfed2,
+.fedlist .finalfed2 {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.suppbtn {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suppbtn .supp {
+    margin: 5px;
+    padding: 1px;
+    border: 1px solid;
+}
+
+/*LDS*/
+
+
+div#fitem_intro {
+    float: left;
+    width: 24%;
+    margin-right: 8px;
+}
+
+div#fitem_id_mainfeedback {
+    float: left;
+    width: 24%;
+    margin-right: 8px;
+}
+
+div#fitem_id_finalfeedback {
+    float: left;
+    width: 24%;
+    margin-right: 8px;
+}
+
+span.fbname {
+    width: calc(100% - 38px);
+}
+
+li.introfeedback {
+    display: block !important;
+}
+
+div#fitem_id_grade {
+    float: left;
+    width: 24%;
+    margin-right: 8px;
+}
+
+#fitem_id_currentgrade {
+    display: none;
+}
+
+div#fitem_id_mainfeedback.row .d-flex,
+div#fitem_id_finalfeedback.row .d-flex,
+div#fitem_intro .d-flex {
+    display: inherit !important;
+}
+
+
+div#fitem_id_assignfeedbackcomments_editor {
+    /* width: 100%; */
+    float: left;
+    margin-top: 24px;
+}
+
+div#fitem_id_currentgrade {
+    float: left;
+    width: 25%;
+    margin-right: 5px;
+    display: none !important;
+}
+
+div#fitem_id_grade label,
+div#fitem_id_finalfeedback label,
+div#fitem_id_mainfeedback label,
+div#fitem_intro label {
+    height: 40px;
+}
+
+#page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement .custom-select {
+    border-radius: 5px;
+}
+
+#page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement .custom-select option {
+    font-size: 17px;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#id_assignfeedbackcomments_editoreditable .introductry {
+    background: #ec979a;
+    height: 10px;
+    width: 100px;
+}
+
+#id_assignfeedbackcomments_editoreditable .mainfed {
+    background: #fedea5;
+    height: 10px;
+    width: 100px;
+}
+
+#id_assignfeedbackcomments_editoreditable .finalfed {
+    background: #6695c9;
+    height: 10px;
+    width: 100px;
+}
+
+#page-mod-assign-grader .modal-dialog-scrollable textarea {
+    width: 100% !important;
+}
+
+.path-mod-assign [data-region="grade-panel"] .mform #fitem_id_grade.fitem {
+    padding-top: 0px;
+}
+
+div#feedmainouter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform div#feedmainouter {
+    width: 77%;
+}
+
+
+#mainfedsec,
+#intofed-sec1 {
+    margin: 0 10px;
+}
+
+.unamer,
+ul.ulclassone {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    background: #fff;
+    margin-top: 4px;
+    /* position: absolute; */
+    z-index: 99;
+    right: 0;
+}
+
+
+
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform .unamer,
+ul.ulclassone {
+    position: absolute;
+    margin: 5px;
+}
+
+
+ul.ulclassone li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.ulclassone li:hover {
+    color: #0f6fc5;
+}
+
+
+.ulclassone .icon {
+    margin: auto;
+}
+
+ul.ulclasstwo {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    background: #fff;
+    margin-top: 4px;
+    position: absolute;
+    z-index: 99;
+}
+
+ul.ulclasstwo li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.ulclasstwo li:hover {
+    color: #0f6fc5;
+}
+
+
+.ulclasstwo .icon {
+    margin: auto;
+}
+
+ul.ulclassthree {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    background: #fff;
+    margin-top: 4px;
+    position: absolute;
+    z-index: 99;
+}
+
+ul.ulclassthree li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.ulclassthree li:hover {
+    color: #0f6fc5;
+}
+
+
+.ulclassthree .icon {
+    margin: auto;
+}
+
+
+
+ul.ulclassfour {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    background: #fff;
+    margin-top: 4px;
+    position: absolute;
+    z-index: 99;
+}
+
+ul.ulclassfour li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.ulclassfour li:hover {
+    color: #0f6fc5;
+}
+
+
+.ulclassfour .icon {
+    margin: auto;
+}
+
+
+
+
+#feedmainouter p {
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+
+
+/* Start Our Custom CSS  */
+
+/* #mainfedsec,
+#intofed-sec1,
+#finalfedsec {
+    margin: 0 10px;
+} */
+
+div#feedmainouter {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    overflow-x: auto;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.suppbtn span.supp {
+    padding: 7px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px 3px;
+}
+
+div#feedmainouter button {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ef2222;
+    background-color: #ef5350;
+    /* min-width: 120px !important; */
+    /* text-wrap-mode: nowrap; */
+    margin: 0 1px;
+}
+
+div#feedmainouter button:hover {
+    background-color: #ef5350 !important;
+}
+
+#mainfedsec,
+#intofed-sec1 {
+    margin: 0 !important;
+}
+
+
+ul.ulclassone,
+ul.ulclasstwo,
+ul.ulclassthree,
+ul.ulclassfour {
+    left: 0;
+    right: 0;
+}
+
+
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform ul.ulclassone,
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform ul.ulclasstwo,
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform ul.ulclassthree,
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform ul.ulclassfour {
+    left: auto;
+    right: auto;
+}
+
+
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform span.introfed2,
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform span.mainfed2,
+.path-mod-assign [data-region="review-panel"].collapsed+[data-region="grade-panel"] .box.boxaligncenter.gradingform span.finalfed2 {
+    margin: 4px 10px;
+    padding: 10px;
+}
+
+.fedlist {
+    align-items: center;
+    margin: 10px 0;
+}
+
+select#spfilter {
+    padding: 8px 0;
+}
+
+.fedlist span.introfed2 {
+    padding: 7px;
+    background-color: #f1c2c2;
+    border-radius: 100px;
+    color: #F60E0E;
+}
+
+.fedlist span.mainfed2 {
+    padding: 7px;
+    background-color: #c8e9c8;
+    /* margin: 0 6px; */
+    border-radius: 100px;
+    color: #008000;
+}
+
+.fedlist span.finalfed2 {
+    padding: 7px;
+    background-color: #c7c7e6;
+    /* margin: 0 6px; */
+    border-radius: 100px;
+    color: #0000FF;
+}
+
+.fedlist span.introfed2.backfeed,
+.fedlist span.mainfed2.backfeed,
+.fedlist span.finalfed2.backfeed {
+    transform: scale(0.5) !important;
+    transition: all .5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+ul.ulclassfour li.filterres>input#searchres {
+    width: 100%;
+}
+
+/* div#intofed-sec1 button.introtoggle,
+div#mainfedsec button.maintoogle,
+div#finalfedsec button.selecttoogle {
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 0;
+    padding: 0;
+    font-weight: bold !important;
+    width: 130.14px;
+    margin: 0 5px;
+    background-color: #ef3d39;
+} */
+
+/* div#intofed-sec1,
+div#mainfedsec,
+div#finalfedsec {
+    width: 144px;
+} */
+
+/* div#resourcesec {
+    margin: 0 5px;
+    text-wrap-mode: nowrap;
+} */
+
+/* 
+div#resourcesec button.resourcetoogle {
+    padding: 10px 0px;
+    border-radius: 0;
+    border: 0;
+    width: 147px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#resourcesec button.resourcetoogle i.icon {
+    font-size: 25px;
+    margin: 0px 10px;
+} */
+
+
+div#fitem_id_assignfeedbackcomments_editor {
+    border: 3px solid #9e9c9c !important;
+}
+
+
+
+
+#nametags+ul.unamer {
+    border: 2px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+#nametags+ul.unamer li {
+    padding: 5px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+#nametags+ul.unamer li:hover {
+    color: #0a73df;
+    background-color: aliceblue;
+}
+
+
+/* End Our Custom Css */
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    #page-mod-assign-grader div#fitem_intro,
+    #page-mod-assign-grader div#fitem_id_mainfeedback,
+    #page-mod-assign-grader div#fitem_id_finalfeedback,
+    #page-mod-assign-grader div#fitem_id_grade,
+    #page-mod-assign-grader div#fitem_id_currentgrade {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    }
+
+    div#fitem_id_grade label,
+    div#fitem_id_finalfeedback label,
+    div#fitem_id_mainfeedback label,
+    div#fitem_intro label {
+        height: auto;
+    }
+
+    div#fitem_id_currentgrade {
+        margin-bottom: 10px;
+    }
+
+    #page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement {
+        width: 100% !important;
+    }
+
+    #page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement .custom-select {
+        width: 100% !important;
+    }
+}
+
+
+
+
+@media screen and (max-width:767px) {
+
+    #page-mod-assign-grader div#fitem_intro,
+    #page-mod-assign-grader div#fitem_id_mainfeedback,
+    #page-mod-assign-grader div#fitem_id_finalfeedback,
+    #page-mod-assign-grader div#fitem_id_grade,
+    #page-mod-assign-grader div#fitem_id_currentgrade {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    }
+
+    div#fitem_id_grade label,
+    div#fitem_id_finalfeedback label,
+    div#fitem_id_mainfeedback label,
+    div#fitem_intro label {
+        height: auto;
+    }
+
+    div#fitem_id_currentgrade {
+        margin-bottom: 10px;
+    }
+
+    #page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement {
+        width: 100% !important;
+    }
+
+    #page-mod-assign-grader.path-mod-assign [data-region="grade-panel"] .mform .fitem .felement .custom-select {
+        width: 100% !important;
+    }
+}
