@@ -1,1 +1,0 @@
-1. SELECT m.*  FROM mrt m INNER JOIN `listing` l on find_in_set(m.id, REPLACE(l.mrt, ' ', '')) WHERE l.sale_or_rent = 1
