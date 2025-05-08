@@ -1,0 +1,35 @@
+.box {
+    background-color: white;
+    outline: 2px dashed #bbbbbb;
+    min-height: 140px;
+	
+}
+.box.is-dragover {
+    background-color: grey;
+}
+
+.box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box label strong {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.box label strong:hover {
+    color: blueviolet
+}
+
+.box input {
+    display: none;
+}
+.form-inline {
+	display: initial !important;
+	flex-flow: row wrap;
+	align-items: center;
+}
