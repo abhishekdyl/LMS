@@ -91,7 +91,9 @@ Route::get('mail',[mailContoller::class,'txt_mail']);
 Route::get('htmlmail',[mailContoller::class,'html_mail']);
 Route::get('attachedmail',[mailContoller::class,'attached_mail']);
 
-
+//-------------------------------/ajax upload/-----------------------------------------
+// Route::view('upimg', 'uploadimg'); 
+Route::post('csvupload',[fileupload::class,'csvupload'])->name('csvupload');
 
 //-------------------------------/package/-----------------------------------------
 
