@@ -65,6 +65,41 @@ class fileupload extends Controller
         return $req->file('doc')->store('img');
         // return $req->file('doc')->storeAs('img',getClientOriginalName('aaa'));
     }
+
+    function csvupload(Request $req){
+        
+        $req->validate([
+            'file'=>'required|mimes:csv|max:2048',
+        ]);
+
+        $file = $req->file("file");
+        $handle = fopen($file->getRealPath(),'r');
+        $header = fgetcsv($handle);
+        $csvData = [];
+
+        while (($raw = fgetcsv($handle)) !== false) {
+            $data = array_combine($header, $raw);
+
+            // $validator = Validator::make($data,[
+            //     'fullname' => 'required|string|max:255',
+            //     'email' => 'required|email|unique:email',
+            // ]);
+
+            // if($validator->fails()){
+            //     continue;
+            // }
+
+            $csvData[] = $data; 
+        }
+
+        fclose($handle);
+
+        echo '<pre>';
+        print_r($csvData);
+        die;
+
+
+    }
  
 
     public function showPdf(Request $req){
