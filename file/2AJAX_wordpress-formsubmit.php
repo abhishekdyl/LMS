@@ -35,7 +35,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } 
 
    
-  
+//   $response = array(
+//     "draw" => intval($draw),
+//     "iTotalRecords" => $iTotalRecords,
+//     "iTotalDisplayRecords" => $iTotalDisplayRecords,
+//     "aaData" => array_values($allforums)
+//   );
+// echo json_encode($response);
     
 
 
